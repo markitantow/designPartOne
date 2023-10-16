@@ -8,12 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var blurView: UIVisualEffectView!
+    @IBOutlet var cardView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+    
     }
-
-
 }
-
