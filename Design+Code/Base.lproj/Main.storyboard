@@ -130,14 +130,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECENT HANDBOOKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URE-xt-bkm">
-                                        <rect key="frame" x="16" y="410" width="136.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" systemColor="secondaryLabelColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3S9-f7-o1Y">
-                                        <rect key="frame" x="16" y="442" width="382" height="257"/>
+                                        <rect key="frame" x="16" y="420" width="382" height="257"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="257" id="ELa-8p-ccW"/>
@@ -186,6 +180,19 @@
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jhj-vR-mzR">
                                                                         <rect key="frame" x="0.0" y="16" width="160" height="90"/>
                                                                     </imageView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo SwiftUI" translatesAutoresizingMaskIntoConstraints="NO" id="yin-JT-GHq" customClass="CustomImageView" customModule="Design_Code" customModuleProvider="target">
+                                                                        <rect key="frame" x="16" y="80" width="26" height="26"/>
+                                                                        <color key="backgroundColor" red="0.094117647058823528" green="0.12549019607843137" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="26" id="66I-a9-mIw"/>
+                                                                            <constraint firstAttribute="height" constant="26" id="tMo-0b-nef"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </imageView>
                                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wKi-C8-HJW">
                                                                         <rect key="frame" x="16" y="210" width="128" height="4"/>
                                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -233,10 +240,12 @@
                                                                 </subviews>
                                                                 <constraints>
                                                                     <constraint firstItem="wKi-C8-HJW" firstAttribute="leading" secondItem="cSz-uZ-Zin" secondAttribute="leading" constant="16" id="5aV-g1-3Gl"/>
+                                                                    <constraint firstItem="yin-JT-GHq" firstAttribute="bottom" secondItem="0cP-Qh-XBY" secondAttribute="bottom" id="BXr-mw-T6T"/>
                                                                     <constraint firstAttribute="bottom" secondItem="d68-dv-pZI" secondAttribute="bottom" id="C2z-cY-gSc"/>
                                                                     <constraint firstItem="jTv-tC-dbw" firstAttribute="bottom" secondItem="wKi-C8-HJW" secondAttribute="top" constant="-8" id="Ecr-zT-aQR"/>
                                                                     <constraint firstAttribute="trailing" secondItem="d68-dv-pZI" secondAttribute="trailing" id="NhD-IS-Y3H"/>
                                                                     <constraint firstItem="d68-dv-pZI" firstAttribute="leading" secondItem="cSz-uZ-Zin" secondAttribute="leading" id="RuW-dh-KUG"/>
+                                                                    <constraint firstItem="yin-JT-GHq" firstAttribute="leading" secondItem="0cP-Qh-XBY" secondAttribute="leading" id="VWC-DT-bVc"/>
                                                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wKi-C8-HJW" secondAttribute="bottom" constant="16" id="ad6-1u-gNW"/>
                                                                     <constraint firstAttribute="trailing" secondItem="0cP-Qh-XBY" secondAttribute="trailing" constant="16" id="djc-RQ-AVW"/>
                                                                     <constraint firstAttribute="trailing" secondItem="Jhj-vR-mzR" secondAttribute="trailing" id="fgj-SH-yMM"/>
@@ -280,18 +289,17 @@
                                     </collectionView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="3S9-f7-o1Y" firstAttribute="leading" secondItem="dHi-4t-yTA" secondAttribute="leading" constant="16" id="1wZ-yU-NV0"/>
                                     <constraint firstItem="sku-SF-YyZ" firstAttribute="top" secondItem="dHi-4t-yTA" secondAttribute="top" id="3gE-W6-7aD"/>
                                     <constraint firstItem="dHi-4t-yTA" firstAttribute="trailing" secondItem="qoV-PG-dZd" secondAttribute="trailing" constant="16" id="3ha-6t-UdA"/>
                                     <constraint firstItem="3S9-f7-o1Y" firstAttribute="leading" secondItem="dHi-4t-yTA" secondAttribute="leading" constant="16" id="DYO-Sw-Iv3"/>
-                                    <constraint firstItem="3S9-f7-o1Y" firstAttribute="top" secondItem="URE-xt-bkm" secondAttribute="bottom" constant="16" id="Gnd-wF-aXS"/>
                                     <constraint firstItem="qoV-PG-dZd" firstAttribute="leading" secondItem="dHi-4t-yTA" secondAttribute="leading" constant="16" id="JIW-P0-VVk"/>
                                     <constraint firstItem="sku-SF-YyZ" firstAttribute="trailing" secondItem="dHi-4t-yTA" secondAttribute="trailing" id="MdN-Go-wpw"/>
                                     <constraint firstItem="sku-SF-YyZ" firstAttribute="leading" secondItem="dHi-4t-yTA" secondAttribute="leading" id="SVr-WY-zCt"/>
                                     <constraint firstAttribute="bottom" secondItem="3S9-f7-o1Y" secondAttribute="bottom" constant="40" id="TUF-zK-J3G"/>
                                     <constraint firstItem="qoV-PG-dZd" firstAttribute="top" secondItem="0xg-ir-e45" secondAttribute="top" constant="20" id="jtn-cO-Gk5"/>
-                                    <constraint firstItem="URE-xt-bkm" firstAttribute="top" secondItem="qoV-PG-dZd" secondAttribute="bottom" constant="40" id="mDE-ku-dzt"/>
-                                    <constraint firstItem="URE-xt-bkm" firstAttribute="leading" secondItem="dHi-4t-yTA" secondAttribute="leading" constant="16" id="ucF-Iw-xqd"/>
                                     <constraint firstItem="dHi-4t-yTA" firstAttribute="trailing" secondItem="3S9-f7-o1Y" secondAttribute="trailing" constant="16" id="vyx-az-VOB"/>
+                                    <constraint firstItem="3S9-f7-o1Y" firstAttribute="top" secondItem="qoV-PG-dZd" secondAttribute="bottom" constant="50" id="yb9-cm-Oyl"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="0xg-ir-e45"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="dHi-4t-yTA"/>
@@ -414,6 +422,7 @@
     <resources>
         <image name="Background01" width="330" height="464.5"/>
         <image name="Illustration 2" width="310" height="217"/>
+        <image name="Logo SwiftUI" width="32" height="32"/>
         <image name="bell.fill" catalog="system" width="123" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
@@ -430,9 +439,6 @@
         <namedColor name="TabBarTint">
             <color red="0.38400000333786011" green="0.20399999618530273" blue="0.83499997854232788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
